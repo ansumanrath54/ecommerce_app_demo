@@ -75,17 +75,17 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   TextButton(
-                    onPressed: () {
-                      validate();
-                      loginUser();
-                    },
+                    onPressed: () {},
                     child: Text('Use Mobile Number', style: TextStyle(color: Colors.orangeAccent, fontSize: 16),),
                   )
                 ],
               ),
               SizedBox(height: 270),
               MaterialButton(
-                onPressed: () { },
+                onPressed: () {
+                  validate();
+                  loginUser();
+                },
                 minWidth: double.infinity,
                 height: 50,
                 shape: RoundedRectangleBorder(
